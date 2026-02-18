@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>notification-netlify</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </head>
+  <body class="flex system-ui sans-serif bg-bg-100 h-screen justify-center text-center p-[20px] text-text-100" >
+    <div class="flex flex-col">
+  <div class="flex flex-col gap-1.5 mt-[150px]">
+    <h1 class="text-[32px] font-bold">Notification Bell</h1>
+    <p class="text-text-200">Click the bell to see notifications</p>
+  </div>
+<div class="relative pt-10">
+<button id="notif" class="bg-bg-200 cursor-pointer relative w-[50px] h-[50px] rounded-[12px]">
+  <i class="fa-solid fa-bell text-[24px]"></i>
+  <span class="bg-bg-300 text-white rounded-[12px] pt-[2px] pb-[2px] pr-[6px] pl-[6px] text-[12px] absolute top-[-9px] right-[-4px]">3</span>
+</button>
+<div id="list" class="flex flex-col hidden mt-3 mr-[40px] bg-bg-200 w-[320px] rounded-[12px] ">
+<div class="flex pt-[16px] pb-[16px] pr-[20px] pl-[20px] justify-between">
+<h3 class="font-bold text-[18px]">Notifications</h3>
+<button  class="bg-none border-none text-text-300 text-[14px] font-bold cursor-pointer transition-[0.2s] hover:bg-bg-400 hover:rounded-[5px] w-30">Mark all as read</button>
+</div>
+<div class="flex-col cursor-pointer hover:bg-[#334155]  pt-[16px] pb-[16px] pr-[20px] pl-[20px] text-left  border-l-4 border-text-300">
+<p class="font-bold text-[15px]">New message received</p>
+<p class="text-text-400 text-[13px]">2 minutes ago</p>
+</div>
+<div class="flex-col cursor-pointer hover:bg-[#334155]  pt-[16px] pb-[16px] pr-[20px] pl-[20px] text-left  border-l-4 border-text-300">
+<p class="font-bold text-[15px]">You have a new follower</p>
+<p class="text-text-400 text-[13px]">1 hour ago</p>
+</div>
+<div class="flex-col cursor-pointer hover:bg-[#334155]  pt-[16px] pb-[16px] pr-[20px] pl-[20px] text-left  border-l-4 border-text-300">
+<p class="font-bold text-[15px]">Order shipped</p>
+<p class="text-text-400 text-[13px]">3 hours ago</p>
+</div>
+<div class="flex-col cursor-pointer hover:bg-[#334155] pt-[16px] pb-[16px] pr-[20px] pl-[20px] text-left">
+<p class="font-bold text-[15px]">Payment received</p>
+<p class="text-text-400 text-[13px]">Yesterday</p>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+</div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
