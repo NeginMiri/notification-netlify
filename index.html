@@ -17,26 +17,26 @@
 <div id="bell-btn" class="relative pt-10">
 <button id="notif" class="bg-bg-200 cursor-pointer relative w-[50px] h-[50px] rounded-[12px]">
   <i class="fa-solid fa-bell text-[24px]"></i>
-  <span class="bg-bg-300 text-white rounded-[12px] pt-[2px] pb-[2px] pr-[6px] pl-[6px] text-[12px] absolute top-[-9px] right-[-4px]">3</span>
+  <span id="bell-number" class="bg-bg-300 text-white rounded-[12px] pt-[2px] pb-[2px] pr-[6px] pl-[6px] text-[12px] absolute top-[-9px] right-[-4px]">3</span>
 </button>
-<div id="list" class="hidden  flex-col mt-3 mr-[40px] bg-bg-200 w-[320px] rounded-[12px] ">
-<div id="notif-new" class="flex pt-[16px] pb-[16px] pr-[20px] pl-5 justify-between">
+<div id="list" class="hidden  flex-col mt-3 mr-10 bg-bg-200 w-[320px] rounded-xl ">
+<div class="flex pt-4 pb-4 pr-5 pl-5 justify-between">
 <h3 class="font-bold text-[18px]">Notifications</h3>
 <button id="mark" class="bg-none border-none text-text-300 text-[14px] font-bold cursor-pointer transition-[0.2s] hover:bg-bg-400 hover:rounded-[5px] w-30">Mark all as read</button>
 </div>
-<div id="notif-new" class="flex-col cursor-pointer hover:bg-[#334155]  pt-[16px] pb-[16px] pr-[20px] pl-[20px] text-left  border-l-4 border-text-300">
+<div id="notif-new" class="notification-item flex-col cursor-pointer hover:bg-border-100  pt-4 pb-4 pr-5 pl-5 text-left  border-l-4 border-text-300">
 <p class="font-bold text-[15px]">New message received</p>
 <p class="text-text-400 text-[13px]">2 minutes ago</p>
 </div>
-<div id="notif-you" class="flex-col cursor-pointer hover:bg-[#334155]  pt-[16px] pb-[16px] pr-[20px] pl-[20px] text-left  border-l-4 border-text-300">
+<div id="notif-you" class="notification-item flex-col cursor-pointer hover:bg-border-100  pt-4 pb-4 pr-5 pl-5 text-left  border-l-4 border-text-300">
 <p class="font-bold text-[15px]">You have a new follower</p>
 <p class="text-text-400 text-[13px]">1 hour ago</p>
 </div>
-<div id="notif-order" class="flex-col cursor-pointer hover:bg-[#334155]  pt-[16px] pb-[16px] pr-[20px] pl-[20px] text-left  border-l-4 border-text-300">
+<div id="notif-order" class="notification-item flex-col cursor-pointer hover:bg-border-100  pt-4 pb-4 pr-5 pl-5 text-left  border-l-4 border-text-300">
 <p class="font-bold text-[15px]">Order shipped</p>
 <p class="text-text-400 text-[13px]">3 hours ago</p>
 </div>
-<div class="flex-col cursor-pointer hover:bg-[#334155] pt-[16px] pb-[16px] pr-[20px] pl-[20px] text-left">
+<div class="flex-col cursor-pointer hover:bg-border-100 pt-4 pb-4 pr-5 pl-5 text-left">
 <p class="font-bold text-[15px]">Payment received</p>
 <p class="text-text-400 text-[13px]">Yesterday</p>
 </div>

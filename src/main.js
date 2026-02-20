@@ -1,13 +1,33 @@
-import './style.css'
-const bell_btnEl = document.getElementById("bell-btn");
-const listEl = document.getElementById("list")
-const markEl = document.getElementById("mark")
-const notif_newEl = document.getElementById("notif-new");
-const notif_youEl = document.getElementById("notif-you");
-const notif_orderEl = document.getElementById("notif-order");
+import "./style.css";
 
-bell_btnEl.addEventListener("click", () =>{
-    listEl.classList.toggle("!flex");
-})
+const bellBtn = document.getElementById("notif");
+const bellNumber = document.getElementById("bell-number");
+const list = document.getElementById("list");
+const markAllBtn = document.getElementById("mark");
+const notifications = document.querySelectorAll(".notification-item");
 
+let count = notifications.length;
+bellNumber.textContent = count;
 
+bellBtn.addEventListener("click", () => {
+  list.classList.toggle("hidden");
+});
+
+notifications.forEach((notif) => {
+  notif.addEventListener("click", () => {
+    if (notif.classList.contains("border-l-4")) {
+      notif.classList.remove("border-l-4", "border-text-300");
+      count--;
+      bellNumber.textContent = count;
+    }
+  });
+});
+
+markAllBtn.addEventListener("click", () => {
+  notifications.forEach((notif) => {
+    notif.classList.remove("border-l-4", "border-text-300");
+  });
+
+  count = 0;
+  bellNumber.textContent = count;
+});
